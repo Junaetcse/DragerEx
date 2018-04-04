@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.bangladesh.user.dragerex.MainActivity">
+
+<ImageView
+    android:layout_width="48dp"
+    android:layout_height="48dp"
+    android:id="@+id/icon"
+    android:layout_marginTop="100dp"
+
+    android:src="@drawable/not"/>
+
+
+    <com.nex3z.notificationbadge.NotificationBadge
+        android:layout_height="28dp"
+        android:layout_width="28dp"
+        android:id="@+id/bedge"
+        android:layout_toRightOf="@+id/icon"
+        android:layout_alignTop="@+id/icon"
+        android:layout_marginLeft="-16dp"
+        android:layout_marginTop="-8dp"
+       app:badgeBackground="@drawable/badge_bg_with"
+        app:maxTextLength="2"
+        ></com.nex3z.notificationbadge.NotificationBadge>
+
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Incrise"
+    android:id="@+id/incrise"
+    android:layout_below="@+id/icon"
+    android:layout_marginTop="50dp"
+
+    />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Many"
+        android:id="@+id/many"
+        android:layout_below="@+id/incrise"
+
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Clear"
+        android:id="@+id/clear"
+        android:layout_below="@+id/many"
+
+        />
+
+</RelativeLayout>
